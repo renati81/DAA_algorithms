@@ -1,3 +1,7 @@
+#CPU: Intel Core i5s
+#RAM: 12.0 GB (11.7 GB usable)
+#Storage: 512 GB SSD
+#Operating System: Windows 11
 import time
 import random
 import matplotlib.pyplot as plt
