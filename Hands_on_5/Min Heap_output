@@ -1,0 +1,18 @@
+Output:
+Building min heap:
+Heap after build: [2, 4, 5, 8, 7, 17, 20, 13, 25]
+
+Adding elements to heap:
+Heap after adding 1: [1, 2, 5, 8, 4, 17, 20, 13, 25, 7]
+Heap after adding 9: [1, 2, 5, 8, 4, 17, 20, 13, 25, 7, 9]
+
+Popping the root element:
+Popped element(root element): 1
+Heap after pop: [2, 4, 5, 8, 7, 17, 20, 13, 25, 9]
+
+Peeking at the root element:
+Root element: 2
+Heap after peek: [2, 4, 5, 8, 7, 17, 20, 13, 25, 9]
+
+Heap size: 10
+Is heap empty? False
