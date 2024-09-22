@@ -1,5 +1,3 @@
-# Online Python compiler (interpreter) to run Python online.
-# Write Python 3 code in this online editor and run it.
 class MinHeap:
     def __init__(self):
         self.heap = []
@@ -77,6 +75,8 @@ class MinHeap:
 
     def __str__(self):
         return str(self.heap)
+
+
 if __name__ == "__main__":
     # Example heap data
     data = [5, 13, 2, 25, 7, 17, 20, 8, 4]
