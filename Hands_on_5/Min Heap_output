@@ -1,18 +1,35 @@
-Output:
-Building min heap:
-Heap after build: [2, 4, 5, 8, 7, 17, 20, 13, 25]
+Building min heap with integers:
+Heap after build: [2, 4, 5, 8, 7, 17, 20, 25, 13]
 
-Adding elements to heap:
-Heap after adding 1: [1, 2, 5, 8, 4, 17, 20, 13, 25, 7]
-Heap after adding 9: [1, 2, 5, 8, 4, 17, 20, 13, 25, 7, 9]
+Adding integer elements to heap:
+Heap after adding 1: [1, 2, 5, 4, 7, 17, 20, 25, 13, 8]
+Heap after adding 9: [1, 2, 5, 4, 7, 9, 20, 25, 13, 8, 17]
 
-Popping the root element:
-Popped element(root element): 1
-Heap after pop: [2, 4, 5, 8, 7, 17, 20, 13, 25, 9]
+Popping the integer root element:
+Popped element (root): 1
+Heap after pop: [2, 4, 5, 8, 7, 9, 20, 25, 13, 17]
 
-Peeking at the root element:
+Peeking at the integer root element:
 Root element: 2
-Heap after peek: [2, 4, 5, 8, 7, 17, 20, 13, 25, 9]
+Heap after peek: [2, 4, 5, 8, 7, 9, 20, 25, 13, 17]
 
-Heap size: 10
+Building min heap with floats:
+Heap after build with floats: [2.2, 7.7, 5.5, 25.1, 13.3, 17.9]
+Heap after adding 1.1: [1.1, 7.7, 2.2, 25.1, 13.3, 17.9, 5.5]
+Heap after adding 9.9: [1.1, 7.7, 2.2, 25.1, 13.3, 17.9, 5.5, 9.9]
+
+Popping the float root element:
+Popped float element (root): 1.1
+Heap after pop: [2.2, 7.7, 5.5, 25.1, 13.3, 17.9, 9.9]
+
+Building min heap with tuples:
+Heap after build with tuples: [(2, 'cherry'), (7, 'elderberry'), (5, 'apple'), (25, 'date'), (13, 'banana'), (17, 'fig')]
+Heap after adding (1, 'grape'): [(1, 'grape'), (7, 'elderberry'), (2, 'cherry'), (25, 'date'), (13, 'banana'), (17, 'fig'), (5, 'apple')]
+Heap after adding (9, 'honeydew'): [(1, 'grape'), (7, 'elderberry'), (2, 'cherry'), (9, 'honeydew'), (13, 'banana'), (17, 'fig'), (5, 'apple'), (25, 'date')]
+
+Popping the tuple root element:
+Popped tuple element (root): (1, 'grape')
+Heap after pop: [(2, 'cherry'), (7, 'elderberry'), (5, 'apple'), (9, 'honeydew'), (13, 'banana'), (17, 'fig'), (25, 'date')]
+
+Heap size: 7
 Is heap empty? False
