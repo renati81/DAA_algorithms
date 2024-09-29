@@ -24,7 +24,6 @@ def quicksort_random(arr, low, high):
         quicksort_random(arr, low, pi - 1)
         quicksort_random(arr, pi + 1, high)
 
-# Wrapper functions for easier use
 def quicksort_wrapper(arr):
     quicksort(arr[:], 0, len(arr) - 1)
     return arr
@@ -33,9 +32,13 @@ def quicksort_random_wrapper(arr):
     quicksort_random(arr[:], 0, len(arr) - 1)
     return arr
 
-# Test the implementations
 if __name__ == "__main__":
     test_arr = [3, 6, 8, 10, 1, 2, 1]
     print("Original array:", test_arr)
     print("Sorted array (non-random pivot):", quicksort_wrapper(test_arr))
     print("Sorted array (random pivot):", quicksort_random_wrapper(test_arr))
+
+#OUTPUT - 
+#Original array: [3, 6, 8, 10, 1, 2, 1]
+#Sorted array (non-random pivot): [3, 6, 8, 10, 1, 2, 1]
+#Sorted array (random pivot): [3, 6, 8, 10, 1, 2, 1]
