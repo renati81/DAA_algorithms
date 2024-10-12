@@ -1,3 +1,6 @@
+#Implement and upload your source code to github for: stack, queue, and singly linked list.
+#Implemented with same functionality (api/interface) as the ones from the book.
+#output is provided at the bottom of code
 class Stack:
     def __init__(self, size):
         self.size = size
@@ -55,3 +58,19 @@ if __name__ == "__main__":
 
     print("\nIs the stack empty?", stack.is_empty())  # Output: False
     print("Is the stack full?", stack.is_full())  # Output: False
+
+#output:
+#Initial stack:
+#Stack is empty
+
+#Pushing elements onto the stack:
+#Stack: [10, 20, 30]
+
+#Top element: 30
+
+#Popping an element from the stack:
+#Popped element: 30
+#Stack: [10, 20]
+
+#Is the stack empty? False
+#Is the stack full? False
