@@ -1,3 +1,6 @@
+#Implement and upload source code to github for: SinglyLinkedList.
+#Implemented with same functionality (api/interface) as the ones from the book.
+#output is provided at the bottom of code
 class Node:
     def __init__(self, data):
         self.data = data
@@ -71,3 +74,19 @@ if __name__ == "__main__":
 
     print("\nSearching for element 20:")
     print("Is 20 in the list?", sll.search(20))  # Output: False
+
+#output
+#Initial linked list:
+#Linked list is empty
+
+#Inserting elements into the linked list:
+#Linked list: 30 -> 20 -> 10 -> None
+
+#Searching for element 20:
+#Is 20 in the list? True
+
+#Deleting element 20:
+#Linked list: 30 -> 10 -> None
+
+#Searching for element 20:
+#Is 20 in the list? False
