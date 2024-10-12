@@ -1,3 +1,6 @@
+#Leverage your implementation of quicksort to implement the ith order statistic. 
+#Example outout has provided at the bottom of code.
+
 import random
 
 # QuickSelect function to find the ith order statistic
@@ -41,3 +44,7 @@ if __name__ == "__main__":
     i = 3  # Looking for the 4th smallest element (i.e., index 3)
     
     print(f"The {i+1}th smallest element in the array is:", find_ith_order_statistic(array, i))
+
+
+#Output:
+#The 4th smallest element in the array is: 7
