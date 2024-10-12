@@ -1,4 +1,4 @@
-#Implement and upload your source code to github for: stack, queue, and singly linked list.
+#Implement and upload source code to github for: stack.
 #Implemented with same functionality (api/interface) as the ones from the book.
 #output is provided at the bottom of code
 class Stack:
