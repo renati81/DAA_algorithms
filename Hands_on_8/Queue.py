@@ -1,3 +1,6 @@
+#Implement and upload source code to github for: Queue.
+#Implemented with same functionality (api/interface) as the ones from the book.
+#output is provided at the bottom of code
 class Queue:
     def __init__(self, size):
         self.size = size
@@ -62,3 +65,19 @@ if __name__ == "__main__":
 
     print("\nIs the queue empty?", queue.is_empty())  # Output: False
     print("Is the queue full?", queue.is_full())  # Output: False
+
+#output:
+#Initial queue:
+#Queue is empty
+
+#Enqueueing elements into the queue:
+#Queue: 10 20 30 
+
+#Front element: 10
+
+#Dequeuing an element from the queue:
+#Dequeued element: 10
+#Queue: 20 30 
+
+#Is the queue empty? False
+#Is the queue full? False
