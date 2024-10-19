@@ -1,0 +1,90 @@
+#include <iostream>
+#define MAX_SIZE 100
+
+class Queue {
+private:
+    int arr[MAX_SIZE];
+    int front;
+    int rear;
+    int size;
+
+public:
+    Queue() {
+        front = 0;
+        rear = -1;
+        size = 0;
+    }
+
+    // Enqueue an element at the rear of the queue
+    void enqueue(int value) {
+        if (size >= MAX_SIZE) {
+            std::cout << "Queue overflow!" << std::endl;
+            return;
+        }
+        rear = (rear + 1) % MAX_SIZE;
+        arr[rear] = value;
+        size++;
+    }
+
+    // Dequeue an element from the front of the queue
+    int dequeue() {
+        if (size <= 0) {
+            std::cout << "Queue underflow!" << std::endl;
+            return -1;
+        }
+        int value = arr[front];
+        front = (front + 1) % MAX_SIZE;
+        size--;
+        return value;
+    }
+
+    // Check if the queue is empty
+    bool isEmpty() {
+        return size == 0;
+    }
+
+    // Get the element at the front without removing it
+    int peek() {
+        if (size <= 0) {
+            std::cout << "Queue is empty!" << std::endl;
+            return -1;
+        }
+        return arr[front];
+    }
+
+    // Display the queue contents
+    void display() {
+        if (size <= 0) {
+            std::cout << "Queue is empty!" << std::endl;
+            return;
+        }
+        std::cout << "Queue elements: ";
+        for (int i = 0; i < size; i++) {
+            std::cout << arr[(front + i) % MAX_SIZE] << " ";
+        }
+        std::cout << std::endl;
+    }
+};
+
+int main() {
+    Queue queue;
+    queue.enqueue(10);
+    queue.enqueue(20);
+    queue.enqueue(30);
+
+    queue.display();
+
+    std::cout << "Dequeued element: " << queue.dequeue() << std::endl;
+    queue.display();
+
+    std::cout << "Front element: " << queue.peek() << std::endl;
+
+    return 0;
+}
+
+//output
+
+//Queue elements: 10 20 30 
+//Dequeued element: 10
+//Queue elements: 20 30 
+//Front element: 20
