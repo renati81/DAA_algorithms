@@ -1,0 +1,114 @@
+#include <iostream>
+#define MAX_SIZE 100
+
+class SinglyLinkedList {
+private:
+    struct Node {
+        int data;
+        int next;
+    };
+
+    Node nodes[MAX_SIZE];
+    int head;
+    int freeIndex;
+
+public:
+    SinglyLinkedList() {
+        head = -1;
+        freeIndex = 0;
+        for (int i = 0; i < MAX_SIZE - 1; i++) {
+            nodes[i].next = i + 1; // Initialize free list
+        }
+        nodes[MAX_SIZE - 1].next = -1; // End of free list
+    }
+
+    // Insert a new element at the end of the list
+    void insert(int value) {
+        if (freeIndex == -1) {
+            std::cout << "List overflow!" << std::endl;
+            return;
+        }
+
+        int newIndex = freeIndex;
+        freeIndex = nodes[freeIndex].next;
+
+        nodes[newIndex].data = value;
+        nodes[newIndex].next = -1;
+
+        if (head == -1) {
+            head = newIndex;
+        } else {
+            int temp = head;
+            while (nodes[temp].next != -1) {
+                temp = nodes[temp].next;
+            }
+            nodes[temp].next = newIndex;
+        }
+    }
+
+    // Delete an element by value
+    void deleteValue(int value) {
+        if (head == -1) {
+            std::cout << "List underflow!" << std::endl;
+            return;
+        }
+
+        int temp = head;
+        int prev = -1;
+        while (temp != -1 && nodes[temp].data != value) {
+            prev = temp;
+            temp = nodes[temp].next;
+        }
+
+        if (temp == -1) {
+            std::cout << "Value not found!" << std::endl;
+            return;
+        }
+
+        if (prev == -1) {
+            head = nodes[temp].next;
+        } else {
+            nodes[prev].next = nodes[temp].next;
+        }
+
+        nodes[temp].next = freeIndex;
+        freeIndex = temp;
+    }
+
+    // Display the list contents
+    void display() {
+        if (head == -1) {
+            std::cout << "List is empty!" << std::endl;
+            return;
+        }
+
+        std::cout << "List elements: ";
+        int temp = head;
+        while (temp != -1) {
+            std::cout << nodes[temp].data << " ";
+            temp = nodes[temp].next;
+        }
+        std::cout << std::endl;
+    }
+};
+
+int main() {
+    SinglyLinkedList list;
+    list.insert(10);
+    list.insert(20);
+    list.insert(30);
+
+    list.display();
+
+    list.deleteValue(20);
+    list.display();
+
+    list.deleteValue(50); // Try to delete a non-existent value
+
+    return 0;
+}
+
+//output:
+//List elements: 10 20 30 
+//List elements: 10 30 
+//Value not found!
