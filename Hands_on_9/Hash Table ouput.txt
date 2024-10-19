@@ -1,0 +1,29 @@
+/tmp/VwZsmUlLpK.o
+Initial table:
+Bucket 0: None
+Bucket 1: (2: 200) <-> None
+Bucket 2: None
+Bucket 3: (4: 400) <-> None
+Bucket 4: (1: 100) <-> None
+Bucket 5: None
+Bucket 6: (3: 300) <-> None
+Bucket 7: None
+
+After resizing (grow):
+Bucket 0: (5: 500) <-> None
+Bucket 1: (2: 200) <-> None
+Bucket 2: None
+Bucket 3: (4: 400) <-> None
+Bucket 4: (1: 100) <-> None
+Bucket 5: (6: 600) <-> None
+Bucket 6: (3: 300) <-> None
+Bucket 7: None
+
+After resizing (shrink):
+Bucket 0: (5: 500) <-> None
+Bucket 1: None
+Bucket 2: (6: 600) <-> None
+Bucket 3: None
+
+
+=== Code Execution Successful ===
