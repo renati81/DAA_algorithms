@@ -169,3 +169,14 @@ print("Search for 100:", search_100)
 print("Inorder Traversal After Deleting 1:", inorder_after_delete_1)
 print("Inorder Traversal After Deleting 10:", inorder_after_delete_10)
 print("Inorder Traversal After Deleting 20:", inorder_after_delete_20)
+
+#output
+#Inorder Traversal Before Deletion: [1, 5, 10, 15, 17, 20, 25, 30, 35]
+#Search for 17: True
+#Search for 100: False
+#Inorder Traversal After Deleting 1: [5, 10, 15, 17, 20, 25, 30, 35]
+#Inorder Traversal After Deleting 10: [5, 15, 17, 20, 25, 30, 35]
+#Inorder Traversal After Deleting 20: [5, 15, 17, 25, 30, 35]
+
+
+
