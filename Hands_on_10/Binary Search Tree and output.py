@@ -133,3 +133,14 @@ print("Search for 25:", search_25)
 print("Inorder after deleting 20:", delete_leaf_inorder)
 print("Inorder after deleting 30:", delete_one_child_inorder)
 print("Inorder after deleting 50:", delete_two_children_inorder)
+
+
+#output
+#Inorder Traversal: [20, 30, 40, 50, 60, 70, 80]
+#Preorder Traversal: [50, 30, 20, 40, 70, 60, 80]
+#Postorder Traversal: [20, 40, 30, 60, 80, 70, 50]
+#Search for 50: True
+#Search for 25: False
+#Inorder after deleting 20: [30, 40, 50, 60, 70, 80]
+#Inorder after deleting 30: [40, 50, 60, 70, 80]
+#Inorder after deleting 50: [40, 60, 70, 80]
