@@ -400,3 +400,62 @@ def test_red_black_tree():
 
 if __name__ == "__main__":
     test_red_black_tree()
+
+#output
+#Test 1: Basic insertion and search
+#Inserted 7
+#Inserted 3
+#Inserted 18
+#Inserted 10
+#Inserted 22
+#Inserted 8
+#Inserted 11
+#Inserted 26
+#Inserted 2
+#Inserted 6
+#Inserted 13
+#Inorder traversal: [2, 3, 6, 7, 8, 10, 11, 13, 18, 22, 26]
+#Is valid RB tree? True
+
+#Test 2: Query operations
+#Tree height: 3
+#Total nodes: 11
+#Minimum value: 2
+#Maximum value: 26
+#Predecessor of 10: 8
+#Successor of 10: 11
+#Range query [5, 15]: [6, 7, 8, 10, 11, 13]
+
+#Test 3: Search operations
+#Searching for 8: Found
+#Searching for 11: Found
+#Searching for 15: Not found
+
+#Test 4: Deletion
+#Deleting 18
+#Inorder traversal after deletion: [2, 3, 6, 7, 8, 10, 11, 13, 22, 26]
+#Is valid RB tree? True
+#Tree height after deletion: 3
+#Total nodes after deletion: 10
+#Deleting 11
+#Inorder traversal after deletion: [2, 3, 6, 7, 8, 10, 13, 22, 26]
+#Is valid RB tree? True
+#Tree height after deletion: 3
+#Total nodes after deletion: 9
+#Deleting 3
+#Inorder traversal after deletion: [2, 6, 7, 8, 10, 13, 22, 26]
+#Is valid RB tree? True
+#Tree height after deletion: 3
+#Total nodes after deletion: 8
+
+#Test 5: Stress test
+#Inorder traversal after stress insertions: [2, 6, 7, 8, 10, 13, 15, 17, 19, 21, 22, 23, 26]
+#Range query [15, 22]: [15, 17, 19, 21, 22]
+#Is valid RB tree? True
+
+#Test 6: Edge cases
+#Empty tree height: -1
+#Empty tree node count: 0
+#Empty tree min: None
+#Empty tree max: None
+#Empty tree range query [1, 10]: []
