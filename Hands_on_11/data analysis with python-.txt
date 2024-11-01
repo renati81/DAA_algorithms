@@ -1,0 +1,64 @@
+data analysis with python-
+
+
+libraries - NumPy, pandas, scikit learn 
+
+_________________________________________________
+
+1.Scientific computing libs 
+- pandas(2d table, data structures and tools)- easy indexing
+- NumPy (array and matrices)
+- Scipy (intergrals,solving differential equations, optimizing)
+
+2. visualization lib
+- matplotlib(plots and graphs)
+- seaborn(plots:heat maps, time series, violin plots)
+
+3.alogorithms lib(packages)
+-scikit learn (ML - regression, classification...)
+-statmodeks(statistical test)
+_____________________________________________________________
+
+Pandas
+- import pandas as pd
+- dataframe.header()
+- df.read
+-df.to_csv - saving file
+- df.to_describe(include=all)
+
+_____________________________________________________________
+df,corr()- Correlation matrix created using all the attributes of the dataset.
+Correlation matrix created using all the attributes of the dataset.
+scatter - dependent x and independent y
+regression - dependent and independent in pandas scatter plot with linear regression
+__________________________________________________
+EDA - 
+ summarize main chara
+ gain better understanding
+ uncoer relationship btn variable
+ extract imp varable
+
+basic description - df.decribe()
+categrial data- value_counts()
+
+numerical data - box plot, easy to compare btn tools
+
+scatter plot - contiouns- price and engine size
+
+group by - df.test 
+
+peason correlation
+- correlation coefficient- 1(positive relation) - (-1) negative relation
+- p value <0.001 strong <0.05 moderate <0.1 weak and >0.1 no creatainty
+
+____________________________
+simple regression - 
+
+import seaborn as sns
+
+________________________________
+
+
+cross validation -  
+
+
