@@ -91,3 +91,9 @@ int main() {
 
     return 0;
 }
+
+//output:
+//Array elements: 10 20 30 40 
+//Size: 4
+//Capacity: 4
+//Element at index 2: 30
