@@ -66,3 +66,32 @@ print()
 print("Iterative DFS on Custom Graph:")
 visited_custom_iterative = dfs_iterative(custom_graph, 'A')
 print()
+
+# Test results:
+#Recursive DFS on Example1 Graph:
+#Visited: u
+#Visited: v
+#Visited: y
+#Visited: x
+
+#Iterative DFS on Example1 Graph:
+#Visited: u
+#Visited: v
+#Visited: y
+#Visited: x
+
+#Recursive DFS on Custom Graph:
+#Visited: A
+#Visited: B
+#Visited: D
+#Visited: E
+#Visited: F
+#Visited: C
+
+Iterative DFS on Custom Graph:
+Visited: A
+Visited: B
+Visited: D
+Visited: E
+Visited: F
+Visited: C
