@@ -58,3 +58,8 @@ result_custom_graph = topological_sort(custom_graph)
 # Print the results
 print("Topological Sort:", result_example1)
 print("\nTopological Sort:", result_custom_graph)
+
+#Test results:
+#Topological Sort: ['watch', 'socks', 'shirt', 'tie', 'undershorts', 'pants', 'shoes', 'belt', 'jacket']
+
+#Topological Sort: ['G', 'B', 'D', 'F', 'A', 'C', 'E', 'H']
