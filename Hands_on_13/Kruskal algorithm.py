@@ -78,3 +78,12 @@ mst_custom, cost_custom = kruskal_algorithm(num_nodes_custom_example, edges_cust
 print("MST:", mst_custom)
 print("Total Cost:", cost_custom)
 print()
+
+#Test results:
+#Kruskal's Algorithm on Graph:
+#MST: [(6, 7, 1), (2, 8, 2), (5, 6, 2), (0, 1, 4), (2, 5, 4), (2, 3, 7), (0, 7, 8), (3, 4, 9)]
+#Total Cost: 37
+
+#Kruskal's Algorithm on Custom Graph:
+#MST: [(2, 3, 4), (0, 3, 5), (0, 1, 10)]
+#Total Cost: 19
