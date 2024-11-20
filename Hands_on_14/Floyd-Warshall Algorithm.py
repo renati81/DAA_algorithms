@@ -129,11 +129,11 @@ for (u, v), path in additional_paths.items():
 #Path from 1 to 3: [1, 2, 3]
 #Path from 2 to 0: None
 #Path from 2 to 1: [2, 3, 1]
-Path from 2 to 2: [2]
-Path from 2 to 3: [2, 3]
-Path from 3 to 0: None
-Path from 3 to 1: [3, 1]
-Path from 3 to 2: [3, 1, 2]
-Path from 3 to 3: [3]
+#Path from 2 to 2: [2]
+#Path from 2 to 3: [2, 3]
+#Path from 3 to 0: None
+#Path from 3 to 1: [3, 1]
+#Path from 3 to 2: [3, 1, 2]
+#Path from 3 to 3: [3]
 
 
