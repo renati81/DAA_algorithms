@@ -69,3 +69,18 @@ for node, (path, distance) in example_paths.items():
 print("\nAdditional Example Graph:")
 for node, (path, distance) in additional_paths.items():
     print(f"Shortest path to {node}: {path}, Distance: {distance}")
+
+
+#output:
+#Example Graph:
+#Shortest path to s: ['s'], Distance: 0
+#Shortest path to t: ['s', 'y', 't'], Distance: 8
+#Shortest path to x: ['s', 'y', 't', 'x'], Distance: 9
+#Shortest path to y: ['s', 'y'], Distance: 5
+#Shortest path to z: ['s', 'y', 'z'], Distance: 7
+
+#Additional Example Graph:
+#Shortest path to A: ['A'], Distance: 0
+#Shortest path to B: ['A', 'B'], Distance: 1
+#Shortest path to C: ['A', 'B', 'C'], Distance: 3
+#Shortest path to D: ['A', 'B', 'C', 'D'], Distance: 6
