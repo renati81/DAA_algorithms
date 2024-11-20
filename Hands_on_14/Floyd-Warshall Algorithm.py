@@ -76,3 +76,64 @@ for row in distances_additional:
 print("\nAdditional Graph Paths:")
 for (u, v), path in additional_paths.items():
     print(f"Path from {u} to {v}: {path}")
+
+#Output:
+#Example Graph Shortest Path Matrix:
+#[0, 1, -3, 2, -4]
+#[3, 0, -4, 1, -1]
+#[7, 4, 0, 5, 3]
+#[2, -1, -5, 0, -2]
+#[8, 5, 1, 6, 0]
+
+#Example Graph Paths:
+#Path from 0 to 0: [0]
+#Path from 0 to 1: [0, 4, 3, 2, 1]
+#Path from 0 to 2: [0, 4, 3, 2]
+#Path from 0 to 3: [0, 4, 3]
+#Path from 0 to 4: [0, 4]
+#Path from 1 to 0: [1, 3, 0]
+#Path from 1 to 1: [1]
+#Path from 1 to 2: [1, 3, 2]
+#Path from 1 to 3: [1, 3]
+#Path from 1 to 4: [1, 3, 0, 4]
+#Path from 2 to 0: [2, 1, 3, 0]
+#Path from 2 to 1: [2, 1]
+#Path from 2 to 2: [2]
+#Path from 2 to 3: [2, 1, 3]
+#Path from 2 to 4: [2, 1, 3, 0, 4]
+#Path from 3 to 0: [3, 0]
+#Path from 3 to 1: [3, 2, 1]
+#Path from 3 to 2: [3, 2]
+#Path from 3 to 3: [3]
+#Path from 3 to 4: [3, 0, 4]
+#Path from 4 to 0: [4, 3, 0]
+#Path from 4 to 1: [4, 3, 2, 1]
+#Path from 4 to 2: [4, 3, 2]
+#Path from 4 to 3: [4, 3]
+#Path from 4 to 4: [4]
+
+#Additional Graph Shortest Path Matrix:
+#[0, 2, 5, 1]
+#[inf, 0, 3, 1]
+#[inf, -1, 0, -2]
+#[inf, 1, 4, 0]
+
+#Additional Graph Paths:
+#Path from 0 to 0: [0]
+#Path from 0 to 1: [0, 1]
+#Path from 0 to 2: [0, 1, 2]
+#Path from 0 to 3: [0, 3]
+#Path from 1 to 0: None
+#Path from 1 to 1: [1]
+#Path from 1 to 2: [1, 2]
+#Path from 1 to 3: [1, 2, 3]
+#Path from 2 to 0: None
+#Path from 2 to 1: [2, 3, 1]
+Path from 2 to 2: [2]
+Path from 2 to 3: [2, 3]
+Path from 3 to 0: None
+Path from 3 to 1: [3, 1]
+Path from 3 to 2: [3, 1, 2]
+Path from 3 to 3: [3]
+
+
