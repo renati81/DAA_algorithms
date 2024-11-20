@@ -75,3 +75,19 @@ if isinstance(additional_paths, str):
 else:
     for node, (path, distance) in additional_paths.items():
         print(f"Shortest path to {node}: {path}, Distance: {distance}")
+
+#output:
+#Example Graph:
+#Shortest path to v0: ['v0'], Distance: 0
+#Shortest path to v1: ['v0', 'v3', 'v4', 'v1'], Distance: -4
+#Shortest path to v2: ['v0', 'v3', 'v2'], Distance: 3
+#Shortest path to v3: ['v0', 'v3'], Distance: 0
+#Shortest path to v4: ['v0', 'v3', 'v4'], Distance: -3
+#Shortest path to v5: ['v0', 'v3', 'v4', 'v1', 'v5'], Distance: -5
+
+#Additional Example Graph:
+#Shortest path to A: ['A'], Distance: 0
+#Shortest path to B: ['A', 'B'], Distance: 4
+#Shortest path to C: ['A', 'C'], Distance: 2
+#Shortest path to D: ['A', 'C', 'D'], Distance: 5
+
